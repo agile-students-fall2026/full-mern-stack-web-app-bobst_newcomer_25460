@@ -56,7 +56,6 @@ const AboutUs = () => {
   return (
     <article className="AboutUs" aria-labelledby="about-title">
       <div className="AboutUs-copy">
-        <p className="AboutUs-eyebrow">{about.eyebrow}</p>
         <h1 id="about-title">{about.title}</h1>
         <div className="AboutUs-biography">
           {about.paragraphs.map((paragraph, index) => (

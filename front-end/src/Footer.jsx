@@ -8,7 +8,7 @@ import './Footer.css'
 const Footer = props => {
   return (
     <footer className="Footer-footer">
-      Agile Development &middot; Fall 2026
+      &copy;2027. Foo Barstein. All rights reserved.
     </footer>
   )
 }

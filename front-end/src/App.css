@@ -1,6 +1,6 @@
 html,
 body {
-  background-color: #f7f8f5;
+  background-color: #282c34;
 }
 
 html {
@@ -17,9 +17,6 @@ html {
 
 .App {
   text-align: center;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
 }
 
 .App-logo {
@@ -34,9 +31,8 @@ html {
 }
 
 .App-main {
-  flex: 1;
-  background-color: #f7f8f5;
-  padding: 24px clamp(20px, 5vw, 64px);
+  background-color: white;
+  padding: 20px;
 }
 .App-link {
   color: #61dafb;

@@ -25,7 +25,6 @@ const { User } = require('./models/User')
 app.get('/about-us', (req, res) => {
   res.json({
     title: 'About Us',
-    eyebrow: 'Agile Development / Fall 2026',
     paragraphs: [
       "I'm a student taking Agile Development in Fall 2026. Through this course, I'm developing my skills in building web applications and understanding how the different parts of a software project fit together.",
       'This project brings together MongoDB, Express, React, and Node.js. It gives me an opportunity to work with both the user interface and the backend, connecting what people see in the browser with the services and data behind it.',

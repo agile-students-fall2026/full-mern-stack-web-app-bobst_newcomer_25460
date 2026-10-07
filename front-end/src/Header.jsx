@@ -1,6 +1,5 @@
 import './Header.css'
-import logo from './logo.svg'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 /**
  * A React component that is used for the header displayed at the top of every page of the site.
@@ -11,15 +10,20 @@ const Header = props => {
   return (
     <header className="Header-header">
       <nav className="Header-navbar">
-        <Link to="/" className="logo">
-          <img src={logo} alt="Our fabulous logo" />
+        <Link to="/" className="logo" aria-label="Home">
+          <span aria-hidden="true">AD</span>
         </Link>
         <ul className="nav-links">
           <li className="nav-item">
-            <Link to="/">Home</Link>
+            <NavLink to="/" end>
+              Home
+            </NavLink>
           </li>
           <li className="nav-item">
-            <Link to="/messages">Messages</Link>
+            <NavLink to="/messages">Messages</NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink to="/about-us">About Us</NavLink>
           </li>
         </ul>
       </nav>

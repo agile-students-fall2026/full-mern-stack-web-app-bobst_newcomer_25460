@@ -1,5 +1,31 @@
 # Full MERN-Stack Web App Exercise
 
+## Completed About Us page
+
+The About Us page is available at `http://localhost:7002/about-us` after starting
+the database, back end, and front end using the instructions below. The header
+also includes an About Us link.
+
+- `GET http://localhost:5002/about-us` returns the heading, biography paragraphs,
+  photo URL, alternative text, and caption as JSON.
+- `front-end/src/AboutUs.jsx` fetches this content from the back end and displays
+  loading feedback and a retry button if the request fails.
+- The supplied portrait is stored unchanged at `front-end/public/images/profile.png`.
+- The page adapts to desktop and mobile screens. The existing messages features
+  continue to use MongoDB.
+
+Use Node.js 24 LTS (or a supported Node version compatible with Vite 7).
+Install dependencies separately in `back-end` and `front-end` with `npm ci`.
+The frontend production build can be checked with `npm run build` from `front-end`.
+The starter's React Testing Library dependency has been updated to support React 19.
+
+To check the exercise, open the About Us page, confirm the photo and three
+paragraphs appear, and inspect the `/about-us` JSON response in the browser's
+Network panel. Submit a message on the Messages page and refresh to confirm that
+the database stores it.
+
+## Original exercise instructions
+
 This is a so-called "`monorepo`" - a single repository containing all the components necessary to build and run an app:
 
 - a front-end built with [React.js](https://reactjs.org)

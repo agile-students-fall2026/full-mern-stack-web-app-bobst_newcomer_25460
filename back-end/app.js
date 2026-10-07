@@ -22,6 +22,23 @@ mongoose
 const { Message } = require('./models/Message')
 const { User } = require('./models/User')
 
+// The About Us page gets its content, including the photo URL, from this API.
+app.get('/about-us', (req, res) => {
+  res.json({
+    title: 'About Us',
+    eyebrow: 'Agile Development / Fall 2026',
+    introduction: 'Learning by building.',
+    paragraphs: [
+      "I'm a student taking Agile Development in Fall 2026. Through this course, I'm developing my skills in building web applications and understanding how the different parts of a software project fit together.",
+      'This project brings together MongoDB, Express, React, and Node.js. It gives me an opportunity to work with both the user interface and the backend, connecting what people see in the browser with the services and data behind it.',
+      'My focus for this course is to become more confident taking a feature from an idea to a working implementation. That includes organizing the work, using version control, checking that features behave correctly, and communicating clearly about how the application works.',
+    ],
+    imageUrl: '/images/profile.png',
+    imageAlt: 'A photo of me by the waterfront at night',
+    imageCaption: 'Student. Builder. Always learning.',
+  })
+})
+
 // a route to handle fetching all messages
 app.get('/messages', async (req, res) => {
   // load all messages from database

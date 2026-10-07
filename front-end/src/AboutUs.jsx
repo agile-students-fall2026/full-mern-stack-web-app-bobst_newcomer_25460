@@ -58,7 +58,6 @@ const AboutUs = () => {
       <div className="AboutUs-copy">
         <p className="AboutUs-eyebrow">{about.eyebrow}</p>
         <h1 id="about-title">{about.title}</h1>
-        <h2>{about.introduction}</h2>
         <div className="AboutUs-biography">
           {about.paragraphs.map((paragraph, index) => (
             <p key={index}>{paragraph}</p>
@@ -67,7 +66,6 @@ const AboutUs = () => {
       </div>
       <figure className="AboutUs-portrait">
         <img src={about.imageUrl} alt={about.imageAlt} width="636" height="605" />
-        <figcaption>{about.imageCaption}</figcaption>
       </figure>
     </article>
   )
